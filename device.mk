@@ -65,5 +65,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lge/alphaplus/alphaplus-vendor.mk)
